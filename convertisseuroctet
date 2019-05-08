@@ -1,0 +1,57 @@
+package Communication;
+
+public class ConvertisseurOctet {
+
+    public ConvertisseurOctet() {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: aload_0
+         * 1: invokespecial java/lang/Object."<init>":()V
+         * 4: return
+         *  */
+        // </editor-fold>
+    }
+
+    public byte IntToByte(int valeur) {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: iload_1
+         * 1: ifge          6
+         * 4: iconst_0
+         * 5: ireturn
+         * 6: iload_1
+         * 7: iflt          19
+         * 10: iload_1
+         * 11: bipush        127
+         * 13: if_icmpgt     19
+         * 16: iload_1
+         * 17: i2b
+         * 18: ireturn
+         * 19: iload_1
+         * 20: sipush        255
+         * 23: iand
+         * 24: i2b
+         * 25: ireturn
+         *  */
+        // </editor-fold>
+    }
+
+    public int ByteToInt(byte valeur) {
+        // <editor-fold defaultstate="collapsed" desc="Compiled Code">
+        /* 0: iload_1
+         * 1: iflt          12
+         * 4: iload_1
+         * 5: bipush        127
+         * 7: if_icmpgt     12
+         * 10: iload_1
+         * 11: ireturn
+         * 12: iload_1
+         * 13: ifge          22
+         * 16: iload_1
+         * 17: sipush        256
+         * 20: iadd
+         * 21: ireturn
+         * 22: iconst_0
+         * 23: ireturn
+         *  */
+        // </editor-fold>
+    }
+}
